@@ -41,7 +41,6 @@ namespace SingleResponsibilityPrinciple
                     while ((line = reader.ReadLine()) != null)
                     {
                         tradeData.Add(line);
-                        logger.LogInfo("added line");
                     }
                 }
 
