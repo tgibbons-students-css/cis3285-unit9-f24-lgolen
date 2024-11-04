@@ -34,7 +34,7 @@ namespace SingleResponsibilityPrinciple
             } 
             else
             {
-                if (decimal.Parse(tradeData[2]) < 1000 || decimal.Parse(tradeData[2]) > 1000000)
+                if (!(decimal.Parse(tradeData[1]) >= 1000) || !(decimal.Parse(tradeData[1]) <= 1000000))
                 {
                     logger.LogWarning("Trade amount must be between 1,000 and 1,000,000: '{0}'", tradeData[2]);
                     return false;
